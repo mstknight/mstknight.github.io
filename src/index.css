@@ -58,6 +58,8 @@ button, a { -webkit-tap-highlight-color:transparent; }
 .card-arrow { color:#aeb5a1; margin-left:auto; align-self:flex-start; }
 .school-seal { position:relative; flex:0 0 96px; width:96px; height:96px; border-radius:50%; display:grid; place-items:center; color:#ece9d5; background:#532d3a; box-shadow:inset 0 0 0 7px #ffffff0b, inset 0 0 0 8px #00000035, 0 10px 30px #00000038; }
 .school-seal.blue { background:#203d63; }
+.school-seal img { position:relative; z-index:1; width:100%; height:100%; object-fit:contain; padding:4px; border-radius:50%; background:#fff; }
+.seal-fallback { display:none; }
 .seal-ring { position:absolute; inset:12px; border:1px solid #ece9d566; border-radius:50%; }
 .seal-mark { font:27px Georgia,serif; line-height:1; }
 .school-seal small { position:absolute; bottom:16px; font:7px 'DM Mono',monospace; letter-spacing:.12em; }
