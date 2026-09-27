@@ -6,8 +6,8 @@ export const profile = {
   intro: '你好，我是李昕炀，一名算法工程师。',
   about: '我专注于算法研发、计算机视觉与自动化工程，喜欢把数据、模型和可靠的工程流程连接起来。现在我在香港大学攻读创新设计与技术 MSc(Eng) 学位。',
   education: [
-    { school: '香港大学', short: 'HKU', logo: '/assets/hku-logo.png', degree: 'MSc(Eng) in Innovative Design and Technology', period: '2026.09 - 至今', tone: 'burgundy' },
-    { school: '北京建筑大学', short: 'BUCEA', logo: '/assets/bucea-logo.png', degree: '自动化 · 本科', period: '2022.09 - 2026.06', tone: 'blue' }
+    { school: '香港大学', short: 'HKU', logo: '/assets/university-hong-kong.png', degree: 'MSc(Eng) in Innovative Design and Technology', period: '2026.09 - 至今', tone: 'burgundy' },
+    { school: '北京建筑大学', short: 'BUCEA', logo: '/assets/beijing-civil-engineering-architecture.png', degree: '自动化 · 本科', period: '2022.09 - 2026.06', tone: 'blue' }
   ],
   experience: [
     { company: '蓝点触控（北京）科技有限公司', role: '算法工程实习生', period: '2024.07 - 2024.08', detail: '参与智能机器人力控算法研发与调优，完成传感器数据处理模型与信号分析测试。' },
