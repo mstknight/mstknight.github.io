@@ -37,6 +37,63 @@ button, a { -webkit-tap-highlight-color:transparent; }
 .nav-contact:hover { background:#ffffff18; }
 .main-content { flex:1; min-height:0; display:grid; place-items:center; padding:22px 24px 40px; outline:none; overflow:auto; }
 .page { width:100%; }
+.home-page { width:100%; max-width:1160px; margin:0 auto; }
+.home-hero { min-height:calc(100svh - 185px); justify-content:center; padding:40px 10px 70px; position:relative; }
+.scroll-cue { position:absolute; bottom:8px; color:#7e8479; font:8px 'DM Mono',monospace; letter-spacing:.13em; }
+.scroll-cue span { color:#c3c8b5; font-size:14px; margin-left:7px; }
+.home-section { border-top:1px solid #ffffff14; padding:112px 3% 126px; scroll-margin-top:24px; }
+.section-heading { display:flex; align-items:end; justify-content:space-between; gap:60px; margin-bottom:48px; }
+.section-heading .eyebrow { margin-bottom:22px; }
+.section-heading .eyebrow.left { justify-content:flex-start; }
+.section-heading h2 { font-family:'Instrument Serif',Georgia,serif; font-size:clamp(45px,5.4vw,72px); font-weight:400; letter-spacing:-.035em; line-height:.98; margin:0; color:#eeeeda; }
+.section-heading h2 em { color:#aeb2a4; font-weight:400; }
+.section-heading > p { max-width:260px; color:#8f9589; font-size:12px; line-height:1.9; margin:0 0 5px; }
+.school-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.school-card { position:relative; min-height:188px; border-radius:18px; display:flex; align-items:center; gap:23px; padding:28px 26px; overflow:hidden; transition:transform .35s, background .35s; }
+.school-card:hover { transform:translateY(-5px); background:#ffffff0a; }
+.school-info { min-width:0; }
+.card-kicker { color:#909889; font:9px 'DM Mono',monospace; letter-spacing:.1em; }
+.school-info h3 { color:#e5e6db; font:500 23px 'Instrument Serif',Georgia,serif; margin:13px 0 6px; }
+.school-info p { font-size:11px; line-height:1.6; color:#a4aa9d; margin:0; }
+.card-arrow { color:#aeb5a1; margin-left:auto; align-self:flex-start; }
+.school-seal { position:relative; flex:0 0 96px; width:96px; height:96px; border-radius:50%; display:grid; place-items:center; color:#ece9d5; background:#532d3a; box-shadow:inset 0 0 0 7px #ffffff0b, inset 0 0 0 8px #00000035, 0 10px 30px #00000038; }
+.school-seal.blue { background:#203d63; }
+.seal-ring { position:absolute; inset:12px; border:1px solid #ece9d566; border-radius:50%; }
+.seal-mark { font:27px Georgia,serif; line-height:1; }
+.school-seal small { position:absolute; bottom:16px; font:7px 'DM Mono',monospace; letter-spacing:.12em; }
+.book-grid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:13px; align-items:start; }
+.book-card { min-width:0; }
+.book-cover { aspect-ratio:.67; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; padding:16px 13px; color:#f4f0e5; box-shadow:7px 10px 18px #00000038; transition:transform .4s, box-shadow .4s; }
+.book-card:hover .book-cover { transform:translateY(-9px) rotate(-1.5deg); box-shadow:12px 20px 24px #00000055; }
+.book-cover::after { content:""; position:absolute; inset:0; background:linear-gradient(120deg,#ffffff1d,transparent 35%,#00000020); pointer-events:none; }
+.book-mark { font:italic 27px 'Instrument Serif',serif; opacity:.85; }
+.book-title { position:relative; z-index:1; font:20px 'Instrument Serif',serif; line-height:1.04; max-width:90%; }
+.book-author { position:relative; z-index:1; font-size:8px; opacity:.7; letter-spacing:.04em; }
+.book-spine { position:absolute; right:8px; top:50%; writing-mode:vertical-rl; font:7px 'DM Mono',monospace; opacity:.55; }
+.book-caption { display:flex; flex-direction:column; gap:4px; padding:12px 2px 0; }
+.book-caption strong { font-size:12px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.book-caption span { color:#81877d; font-size:10px; line-height:1.5; }
+.book-red .book-cover { background:linear-gradient(145deg,#8c3a2f,#3e151d); }
+.book-gold .book-cover { background:linear-gradient(145deg,#b28b46,#51401f); }
+.book-violet .book-cover { background:linear-gradient(145deg,#765d96,#29253d); }
+.book-ink .book-cover { background:linear-gradient(145deg,#26292c,#0d0e10); }
+.book-silver .book-cover { background:linear-gradient(145deg,#687377,#202627); }
+.book-green .book-cover { background:linear-gradient(145deg,#567261,#1c3129); }
+.aesthetic-grid { display:grid; grid-template-columns:1.2fr .9fr .9fr; gap:14px; }
+.aesthetic-card { min-height:330px; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; border:1px solid #ffffff16; background:#ffffff05; }
+.aesthetic-art { flex:1; min-height:255px; position:relative; overflow:hidden; }
+.aesthetic-art::before,.aesthetic-art::after { content:""; position:absolute; }
+.aesthetic-art::before { width:58%; height:75%; border:1px solid #ffffff45; left:22%; top:14%; transform:rotate(-18deg); box-shadow:0 0 0 16px #ffffff05, 0 0 0 32px #ffffff03; }
+.aesthetic-art::after { width:22%; height:22%; border-radius:50%; left:43%; top:38%; background:#d5cfaa99; filter:blur(1px); box-shadow:0 0 55px 18px #d5cfaa2b; }
+.aesthetic-art .art-index { position:absolute; left:18px; top:16px; color:#ffffff9c; font:8px 'DM Mono',monospace; letter-spacing:.12em; z-index:1; }
+.art-symbol { position:absolute; z-index:1; width:1px; height:55%; left:50%; top:23%; background:#ffffff80; transform:rotate(28deg); }
+.aesthetic-caption { display:flex; align-items:end; gap:13px; padding:17px 18px 19px; border-top:1px solid #ffffff16; }
+.aesthetic-caption h3 { font:25px 'Instrument Serif',serif; margin:0; color:#e8e7d9; }
+.aesthetic-caption p { color:#959b91; font-size:10px; line-height:1.5; margin:0 auto 1px 0; }
+.aesthetic-caption svg { color:#aeb59d; flex-shrink:0; }
+.aesthetic-card.night .aesthetic-art { background:radial-gradient(circle at 67% 38%,#d9c99b88,transparent 4%,transparent 18%),linear-gradient(135deg,#19283b,#090c14 65%); }
+.aesthetic-card.paper .aesthetic-art { background:radial-gradient(circle at 62% 40%,#c8ad7b55,transparent 14%),linear-gradient(135deg,#5e5e55,#1b1d1d 67%); }
+.aesthetic-card.moss .aesthetic-art { background:radial-gradient(ellipse at 30% 55%,#a3b27155,transparent 20%),linear-gradient(145deg,#293c36,#111c1c 70%); }
 .hero-content { text-align:center; display:flex; flex-direction:column; align-items:center; }
 .eyebrow { font:10px 'DM Mono',monospace; letter-spacing:.19em; color:#c2c4b6; display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:32px; }
 .tiny-line { width:24px; height:1px; background:#aaa78d; }
@@ -88,5 +145,5 @@ footer { display:flex; align-items:center; justify-content:space-between; paddin
 .tags span { padding:5px 8px; font-size:9px; }
 .skip-link { position:absolute; left:20px; top:-80px; padding:10px; z-index:10; background:#fff; color:#000; }
 .skip-link:focus { top:10px; }
-@media(max-width:640px) { .site-shell { min-height:560px; } .nav-wrap { padding:20px 18px; } .navbar { padding:11px 13px 11px 18px; } .brand { font-size:21px; } .brand svg { width:22px; } .nav-links { gap:14px; font-size:10px; } .nav-contact { padding:10px; gap:5px; font-size:10px; } .main-content { padding:15px 22px 30px; } h1 { font-size:clamp(53px,11.8vw,76px); } .eyebrow { font-size:8px; letter-spacing:.12em; margin-bottom:26px; } .intro { font-size:12px; } .hero-actions { gap:25px; } .hero-note { font-size:7px; } footer { margin:0 22px; padding:15px 0; } .footer-subtitle,.footer-slash { display:none; } .footer-right { gap:16px; } .interior h1 { font-size:60px; } .interior-copy { font-size:13px; } .resume-grid { grid-template-columns:1fr; gap:24px; margin-top:22px; } .resume-item small { font-size:8px; } .skill-row { margin-bottom:22px; } .work-page .interior-copy { margin-bottom:15px; } }
+@media(max-width:640px) { .site-shell { min-height:560px; } .nav-wrap { padding:20px 18px; } .navbar { padding:11px 13px 11px 18px; } .brand { font-size:21px; } .brand svg { width:22px; } .nav-links { gap:14px; font-size:10px; } .nav-contact { padding:10px; gap:5px; font-size:10px; } .main-content { padding:15px 22px 30px; } h1 { font-size:clamp(53px,11.8vw,76px); } .eyebrow { font-size:8px; letter-spacing:.12em; margin-bottom:26px; } .intro { font-size:12px; } .hero-actions { gap:25px; } .hero-note { font-size:7px; } footer { margin:0 22px; padding:15px 0; } .footer-subtitle,.footer-slash { display:none; } .footer-right { gap:16px; } .interior h1 { font-size:60px; } .interior-copy { font-size:13px; } .resume-grid { grid-template-columns:1fr; gap:24px; margin-top:22px; } .resume-item small { font-size:8px; } .skill-row { margin-bottom:22px; } .work-page .interior-copy { margin-bottom:15px; } .home-hero { min-height:calc(100svh - 185px); padding-inline:0; } .home-section { padding:78px 0 82px; } .section-heading { display:block; margin-bottom:30px; } .section-heading > p { margin-top:22px; max-width:290px; } .section-heading h2 { font-size:52px; } .school-list { grid-template-columns:1fr; } .school-card { min-height:150px; padding:20px 18px; gap:17px; } .school-seal { flex-basis:72px; width:72px; height:72px; } .seal-ring { inset:9px; } .seal-mark { font-size:21px; } .school-seal small { bottom:11px; font-size:6px; } .school-info h3 { font-size:20px; margin-top:10px; } .school-info p { font-size:10px; } .book-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px 10px; } .book-cover { padding:11px 9px; } .book-title { font-size:16px; } .book-mark { font-size:20px; } .book-caption strong { font-size:10px; } .book-caption span { font-size:9px; } .aesthetic-grid { grid-template-columns:1fr; } .aesthetic-card { min-height:280px; } .aesthetic-art { min-height:205px; } .aesthetic-caption h3 { font-size:23px; } }
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } }

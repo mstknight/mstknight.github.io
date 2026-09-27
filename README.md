@@ -1,6 +1,6 @@
 # elio · Personal Space
 
-React + Vite + Tailwind CSS v4 + Motion + Lucide + hls.js。暗色全屏个人网站，含首页、个人介绍、作品和联系页面。支持手机、键盘导航、减少动态效果设置和视频不可用时的静态背景。
+React + Vite + Tailwind CSS v4 + Motion + Lucide + hls.js。暗色可滚动个人网站，首页包含首屏、教育经历、推荐书架和审美作品画廊，另有个人介绍、作品和联系页面。支持手机、键盘导航、减少动态效果设置和视频不可用时的静态背景。
 
 ## 本地运行
 
@@ -15,7 +15,7 @@ npm run dev
 
 ## 修改内容
 
-在 `src/profile.js` 更新简介和作品。页面结构在 `src/main.jsx`，样式在 `src/index.css`。个人经历尚未提供，因此简介和作品区域明确标为待更新。
+在 `src/profile.js` 更新简介、教育经历、推荐书籍和审美作品。页面结构在 `src/main.jsx`，样式在 `src/index.css`。
 
 联系功能使用真实邮件链接和邮箱复制。GitHub Pages 是静态托管，不提供邮件收集后端；网站不会假装已订阅或发送邮件。
 
