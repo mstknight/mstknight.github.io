@@ -61,6 +61,15 @@ footer { display:flex; align-items:center; justify-content:space-between; paddin
 .interior { max-width:780px; margin:auto; text-align:center; }
 .interior h1 { font-size:clamp(58px,7vw,88px); }
 .interior-copy { font-size:14px; line-height:2.1; color:#b3b6ae; max-width:520px; margin:28px auto; }
+.resume-grid { display:grid; grid-template-columns:1fr 1fr; gap:36px; max-width:850px; margin:28px auto 25px; text-align:left; }
+.resume-grid h3 { font:9px 'DM Mono',monospace; color:#aeb59d; letter-spacing:.14em; border-bottom:1px solid #ffffff17; padding-bottom:10px; margin:0 0 7px; }
+.resume-item { display:grid; grid-template-columns:1fr auto; gap:2px 12px; padding:10px 0; border-bottom:1px solid #ffffff0a; }
+.resume-item strong { font-size:12px; font-weight:500; color:#deded6; }
+.resume-item span { grid-column:1 / 2; color:#a4a9a0; font-size:11px; line-height:1.45; }
+.resume-item small { grid-column:2; grid-row:1 / span 2; color:#81877e; font:9px 'DM Mono',monospace; white-space:nowrap; }
+.skill-row { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:7px; max-width:850px; margin:0 auto 28px; }
+.skill-row span { width:100%; color:#81877e; font:9px 'DM Mono',monospace; letter-spacing:.12em; margin-bottom:2px; }
+.skill-row b, .tags span { border:1px solid #ffffff16; color:#aeb5a6; border-radius:30px; padding:6px 9px; font-size:10px; font-weight:400; }
 .about-note { margin:0 0 30px; font-size:11px; color:#8f9489; display:flex; align-items:center; justify-content:center; gap:8px; }
 .empty-work { border-block:1px solid #ffffff17; padding:25px; margin:25px auto; max-width:540px; }
 .project-number { font:9px 'DM Mono',monospace; letter-spacing:.15em; color:#999e8a; }
@@ -72,9 +81,12 @@ footer { display:flex; align-items:center; justify-content:space-between; paddin
 .copy-status { min-height:20px; font-size:10px; color:#8c9285; margin:12px 0 24px; }
 .projects { display:grid; gap:12px; margin:25px 0; }
 .project { border-radius:15px; padding:20px; text-align:left; position:relative; }
-.project h2 { display:flex; justify-content:space-between; font-size:18px; }
+.project h2 { display:flex; justify-content:space-between; font-size:18px; font-weight:400; margin:7px 0 8px; }
 .project p { font-size:13px; color:#b3b6ae; margin-top:8px; }
+.project-meta { font:9px 'DM Mono',monospace; color:#aeb59d; letter-spacing:.08em; }
+.tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:16px; }
+.tags span { padding:5px 8px; font-size:9px; }
 .skip-link { position:absolute; left:20px; top:-80px; padding:10px; z-index:10; background:#fff; color:#000; }
 .skip-link:focus { top:10px; }
-@media(max-width:640px) { .site-shell { min-height:560px; } .nav-wrap { padding:20px 18px; } .navbar { padding:11px 13px 11px 18px; } .brand { font-size:21px; } .brand svg { width:22px; } .nav-links { gap:14px; font-size:10px; } .nav-contact { padding:10px; gap:5px; font-size:10px; } .main-content { padding:15px 22px 30px; } h1 { font-size:clamp(53px,11.8vw,76px); } .eyebrow { font-size:8px; letter-spacing:.12em; margin-bottom:26px; } .intro { font-size:12px; } .hero-actions { gap:25px; } .hero-note { font-size:7px; } footer { margin:0 22px; padding:15px 0; } .footer-subtitle,.footer-slash { display:none; } .footer-right { gap:16px; } .interior h1 { font-size:60px; } .interior-copy { font-size:13px; } }
+@media(max-width:640px) { .site-shell { min-height:560px; } .nav-wrap { padding:20px 18px; } .navbar { padding:11px 13px 11px 18px; } .brand { font-size:21px; } .brand svg { width:22px; } .nav-links { gap:14px; font-size:10px; } .nav-contact { padding:10px; gap:5px; font-size:10px; } .main-content { padding:15px 22px 30px; } h1 { font-size:clamp(53px,11.8vw,76px); } .eyebrow { font-size:8px; letter-spacing:.12em; margin-bottom:26px; } .intro { font-size:12px; } .hero-actions { gap:25px; } .hero-note { font-size:7px; } footer { margin:0 22px; padding:15px 0; } .footer-subtitle,.footer-slash { display:none; } .footer-right { gap:16px; } .interior h1 { font-size:60px; } .interior-copy { font-size:13px; } .resume-grid { grid-template-columns:1fr; gap:24px; margin-top:22px; } .resume-item small { font-size:8px; } .skill-row { margin-bottom:22px; } .work-page .interior-copy { margin-bottom:15px; } }
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } }
